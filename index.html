@@ -3,12 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sirisha Portfolio</title>
+    <title>Sirisha | Web Designer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f8f9ff;
+        }
+
+        nav {
+            background: #ffffff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav h2 {
+            color: #6c4df6;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #6c4df6;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #666;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            background: #6c4df6;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #666;
+            font-size: 18px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 30px;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            color: #6c4df6;
+        }
+
+        .project p {
+            color: #666;
+        }
+
+        .contact {
+            text-align: center;
+            background: #eeeaff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #222;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Sirisha. Welcome to my website!</p>
+    <nav>
+        <h2>Sirisha</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Hi, I'm <span>Sirisha</span></h1>
+            <p>
+                I create clean, modern and user-friendly websites
+                for businesses and personal brands.
+            </p>
+
+            <a href="#projects" class="button">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p class="about">
+            I'm a passionate beginner web designer who enjoys creating
+            simple, attractive and responsive websites. I use modern
+            tools and creative ideas to build websites that look
+            professional and work well on different devices.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">Web Design</div>
+            <div class="skill">AI Tools</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Business Website</h3>
+                <p>
+                    A clean and modern website concept for a small business.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A professional portfolio website to showcase skills and work.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Landing Page</h3>
+                <p>
+                    A simple conversion-focused landing page design.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Work Together</h2>
+
+        <p>
+            Interested in a website? Feel free to get in touch.
+        </p>
+
+        <a href="mailto:your@email.com" class="button">Contact Me</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Sirisha. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

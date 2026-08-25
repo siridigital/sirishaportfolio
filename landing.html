@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchPro | Grow Your Business</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        header h2 {
+            color: #263a73;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #172033;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: #f4f6fb;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            max-width: 800px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #4f46a5;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #5f6675;
+            font-size: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 32px;
+            background: #263a73;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 75px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 35px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .feature {
+            width: 280px;
+            padding: 30px;
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .feature h3 {
+            color: #4f46a5;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #5f6675;
+        }
+
+        .cta {
+            text-align: center;
+            background: #172033;
+            color: white;
+        }
+
+        .cta h2 {
+            color: white;
+        }
+
+        .cta p {
+            color: #d9dce5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #101522;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>LaunchPro</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>
+                Turn Your Ideas Into <span>Real Growth</span>
+            </h1>
+
+            <p>
+                A modern landing page designed to help businesses
+                present their products, attract customers and grow online.
+            </p>
+
+            <a href="#contact" class="button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Why Choose Us?</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>Modern Design</h3>
+                <p>
+                    Clean and professional designs that create
+                    a strong first impression.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Mobile Friendly</h3>
+                <p>
+                    Websites designed to look great on phones,
+                    tablets and computers.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Business Focused</h3>
+                <p>
+                    Clear content and calls-to-action designed
+                    to help businesses reach their goals.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta" id="contact">
+        <h2>Ready to Grow Your Business?</h2>
+
+        <p>
+            Let's create a professional online presence for your business.
+        </p>
+
+        <a href="mailto:hello@example.com" class="button">
+            Contact Us
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 LaunchPro. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

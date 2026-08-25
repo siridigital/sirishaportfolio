@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Co. | Beauty & Wellness</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: #fffafc;
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        header h2 {
+            color: #c85c8e;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: #fce8f1;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #666;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            background: #c85c8e;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            max-width: 750px;
+            margin: auto;
+            text-align: center;
+            color: #666;
+            font-size: 18px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .service {
+            background: white;
+            width: 280px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .service h3 {
+            color: #c85c8e;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: #666;
+        }
+
+        .contact {
+            text-align: center;
+            background: #fce8f1;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Bloom & Co.</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Feel Beautiful. Feel Confident.</h1>
+
+            <p>
+                Professional beauty and wellness services designed
+                to help you look and feel your best.
+            </p>
+
+            <a href="#services" class="button">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Bloom & Co.</h2>
+
+        <p class="about">
+            Bloom & Co. is a modern beauty and wellness studio focused
+            on providing personalized services in a relaxing environment.
+            Our goal is simple — helping every client feel confident and beautiful.
+        </p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="services">
+
+            <div class="service">
+                <h3>Beauty Care</h3>
+                <p>
+                    Professional beauty treatments designed
+                    around your needs.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Skin Care</h3>
+                <p>
+                    Refreshing skincare services for healthy,
+                    glowing skin.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Wellness</h3>
+                <p>
+                    Relaxing wellness experiences to help you
+                    recharge and feel your best.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Book Your Appointment</h2>
+
+        <p>
+            Ready for your next beauty and wellness experience?
+        </p>
+
+        <a href="mailto:hello@example.com" class="button">
+            Contact Us
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Bloom & Co. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

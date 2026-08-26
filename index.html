@@ -111,12 +111,13 @@
             box-shadow: 0 3px 12px rgba(0,0,0,0.08);
         }
 
-        .projects {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 35px;
-        }
+      .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
        .project {
     background: white;
@@ -163,6 +164,9 @@
             nav a {
                 margin: 0 8px;
             }
+              .projects {
+        grid-template-columns: 1fr;
+    }
         }
         /* Professional Theme */
 

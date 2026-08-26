@@ -4,140 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>IOT Projects | Portfolio</title>
+    <title>IoT Projects | Sirisha</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: #eef4ff;
+    color: #1e293b;
+    line-height: 1.6;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            color: #222;
-            line-height: 1.6;
-        }
+header {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
 
-        header {
-            text-align: center;
-            padding: 70px 20px 50px;
-            background: #111827;
-            color: white;
-        }
+header h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
 
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+header p {
+    max-width: 750px;
+    margin: auto;
+    color: #e0e7ff;
+    font-size: 17px;
+}
 
-        header p {
-            max-width: 700px;
-            margin: auto;
-            color: #d1d5db;
-            font-size: 17px;
-        }
+.container {
+    max-width: 1150px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
 
-        .container {
-            max-width: 1100px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 35px;
-        }
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
 
-        .section-title h2 {
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
+.section-title p {
+    color: #64748b;
+}
 
-        .section-title p {
-            color: #666;
-        }
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
 
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
+.project {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border-top: 5px solid #6366f1;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.12);
+    transition: 0.25s ease;
+}
 
-        .project {
-            background: white;
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: transform 0.2s ease;
-        }
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(124, 58, 237, 0.18);
+}
 
-        .project:hover {
-            transform: translateY(-5px);
-        }
+.project h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #4338ca;
+}
 
-        .project h3 {
-            font-size: 21px;
-            margin-bottom: 12px;
-        }
+.project p {
+    color: #64748b;
+    margin-bottom: 18px;
+}
 
-        .project p {
-            color: #666;
-            margin-bottom: 20px;
-        }
+.tech {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2563eb;
+}
 
-        .tech {
-            font-size: 14px;
-            font-weight: bold;
-            color: #444;
-        }
+.features {
+    margin-bottom: 22px;
+    padding-left: 20px;
+    color: #475569;
+}
 
-        .back {
-            display: block;
-            width: fit-content;
-            margin: 45px auto;
-            padding: 12px 24px;
-            background: #111827;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
+.features li {
+    margin-bottom: 6px;
+}
 
-        .back:hover {
-            opacity: 0.85;
-        }
+.button {
+    display: inline-block;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 14px;
+}
 
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #111827;
-            color: #aaa;
-            font-size: 14px;
-        }
+.button:hover {
+    opacity: 0.85;
+}
 
-        @media (max-width: 800px) {
-            .projects {
-                grid-template-columns: 1fr;
-            }
+.back {
+    display: block;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 12px 25px;
+    background: #4338ca;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
 
-            header h1 {
-                font-size: 34px;
-            }
-        }
+.back:hover {
+    background: #2563eb;
+}
+
+footer {
+    background: #172554;
+    color: #c7d2fe;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+}
     </style>
+    
 </head>
 
 <body>
 
     <header>
-        <h1>IOT Projects</h1>
+<h1>IoT Projects</h1>
 
         <p>
-            Exploring connected systems, sensor monitoring,
-            real-time data and smart technology solutions.
-        </p>
+            A selection of IoT and embedded projects focused on
+            monitoring, automation, connectivity and real-world
+            problem solving.
+                </p>
     </header>
+
 
     <main class="container">
 
@@ -145,56 +177,198 @@
             <h2>Featured Projects</h2>
 
             <p>
-                A collection of IoT concepts focused on
-                connectivity, monitoring and automation.
+                Selected projects demonstrating practical experience
+                with sensors, microcontrollers and connected systems.
             </p>
         </div>
+
 
         <div class="projects">
 
             <div class="project">
-                <h3>Smart Home Automation</h3>
+                <h3>Energy Meter Monitoring Over IoT</h3>
 
                 <p>
-                    A smart home concept using sensors and
-                    microcontrollers to monitor and control
-                    electronic devices.
+                    An IoT-based system designed to monitor electrical
+                    energy usage and provide remote access to
+                    consumption information.
                 </p>
 
                 <div class="tech">
-                    Technologies: Sensors • Microcontroller • IoT
+                    Technologies: IoT • Sensors • Microcontroller
                 </div>
+
+                <ul class="features">
+                    <li>Energy usage monitoring</li>
+                    <li>Remote data access</li>
+                    <li>Real-time monitoring concept</li>
+                </ul>
+
+                <a href="#" class="button">View Details</a>
             </div>
 
+
             <div class="project">
-                <h3>Sensor Monitoring System</h3>
+                <h3>IoT Patient Health Monitoring</h3>
 
                 <p>
-                    A monitoring system designed to collect
-                    sensor information and track environmental
-                    conditions in real time.
+                    A connected healthcare monitoring system designed
+                    to collect patient parameters and support remote
+                    health observation.
                 </p>
 
                 <div class="tech">
-                    Technologies: Sensors • Embedded C • IoT
+                    Technologies: IoT • Sensors • Microcontroller
                 </div>
+
+                <ul class="features">
+                    <li>Health parameter monitoring</li>
+                    <li>Remote observation</li>
+                    <li>Alert-based monitoring concept</li>
+                </ul>
+
+                <a href="#" class="button">View Details</a>
             </div>
 
+
             <div class="project">
-                <h3>IoT-Based Monitoring</h3>
+                <h3>IoT Based Home Automation</h3>
 
                 <p>
-                    A connected monitoring concept for collecting
-                    and presenting real-time data from remote
-                    devices.
+                    A smart home automation system designed to control
+                    electrical appliances using connected devices.
                 </p>
 
                 <div class="tech">
-                    Technologies: IoT • Connectivity • Data Monitoring
+                    Technologies: IoT • Sensors • Microcontroller
                 </div>
+
+                <ul class="features">
+                    <li>Appliance control</li>
+                    <li>Smart device connectivity</li>
+                    <li>Remote operation concept</li>
+                </ul>
+
+                <a href="#" class="button">View Details</a>
+            </div>
+
+
+            <div class="project">
+                <h3>IoT Weather Reporting System</h3>
+
+                <p>
+                    A weather monitoring project designed to collect
+                    environmental data and make the information
+                    available through an IoT-connected system.
+                </p>
+
+                <div class="tech">
+                    Technologies: Arduino • Sensors • IoT
+                </div>
+
+                <ul class="features">
+                    <li>Temperature monitoring</li>
+                    <li>Environmental data collection</li>
+                    <li>Remote reporting</li>
+                </ul>
+
+                <a href="#" class="button">View Details</a>
+            </div>
+
+
+            <div class="project">
+                <h3>IoT Smart Agriculture Monitoring</h3>
+
+                <p>
+                    A smart agriculture monitoring concept using
+                    sensors and IoT connectivity to observe
+                    agricultural conditions.
+                </p>
+
+                <div class="tech">
+                    Technologies: IoT • Sensors • Microcontroller
+                </div>
+
+                <ul class="features">
+                    <li>Environmental monitoring</li>
+                    <li>Sensor-based data collection</li>
+                    <li>Smart agriculture concept</li>
+                </ul>
+
+                <a href="#" class="button">View Details</a>
+            </div>
+
+
+            <div class="project">
+                <h3>IoT Air & Sound Pollution Monitoring</h3>
+
+                <p>
+                    A monitoring system designed to measure pollution
+                    parameters and support environmental monitoring
+                    through IoT connectivity.
+                </p>
+
+                <div class="tech">
+                    Technologies: Sensors • IoT • Data Monitoring
+                </div>
+
+                <ul class="features">
+                    <li>Air quality monitoring</li>
+                    <li>Sound level monitoring</li>
+                    <li>Environmental data collection</li>
+                </ul>
+
+                <a href="#" class="button">View Details</a>
+            </div>
+
+
+            <div class="project">
+                <h3>IoT Solar Power Monitoring</h3>
+
+                <p>
+                    An IoT-based monitoring system focused on observing
+                    solar power generation and related electrical
+                    parameters.
+                </p>
+
+                <div class="tech">
+                    Technologies: IoT • Sensors • Power Monitoring
+                </div>
+
+                <ul class="features">
+                    <li>Solar system monitoring</li>
+                    <li>Electrical parameter observation</li>
+                    <li>Remote monitoring concept</li>
+                </ul>
+
+                <a href="#" class="button">View Details</a>
+            </div>
+
+
+            <div class="project">
+                <h3>IoT Smart Parking Using RFID</h3>
+
+                <p>
+                    A smart parking concept using RFID and IoT
+                    technologies to improve vehicle identification
+                    and parking management.
+                </p>
+
+                <div class="tech">
+                    Technologies: RFID • IoT • Microcontroller
+                </div>
+
+                <ul class="features">
+                    <li>Vehicle identification</li>
+                    <li>Parking management</li>
+                    <li>RFID-based access</li>
+                </ul>
+
+                <a href="#" class="button">View Details</a>
             </div>
 
         </div>
+
 
         <a href="index.html" class="back">
             ← Back to Portfolio
@@ -202,8 +376,9 @@
 
     </main>
 
+
     <footer>
-        © 2026 My Portfolio | IOT Projects
+        © 2026 Sirisha | IoT Projects Portfolio
     </footer>
 
 </body>

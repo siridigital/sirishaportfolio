@@ -90,14 +90,14 @@
     background: white;
     padding: 30px;
     width: 100%;
-    min-height: 220px;
+    min-height: 250px;
     border-radius: 12px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.08);
     margin-bottom: 10px;
 }
 .skills {
     display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     max-width: 900px;
     margin: 30px auto;
@@ -158,10 +158,20 @@ grid-template-columns: repeat(3, 1fr);
 
 section h2 {
     color: #172033;
+    text-align: center;
+    margin-bottom: 25px;
+}
+        section {
+    padding: 80px 20px;
 }
 
 .about {
     color: #5f6675;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 17px;
 }
 
 .project h3 {
@@ -243,8 +253,7 @@ footer {
     <section id="projects">
         <h2>My Projects</h2>
 
-      <div class="projects" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:30px; max-width:1000px; margin:0 auto;">
-
+    <div class="projects">
     <div class="project">
         <h3>Business Website</h3>
         <p>
@@ -258,6 +267,7 @@ footer {
         <p>
             A professional portfolio website to showcase skills and work.
         </p>
+        <a href="#" class="button">View Demo</a>
     </div>
 
     <div class="project">
@@ -274,6 +284,7 @@ footer {
             Microcontroller-based projects involving sensors,
             hardware integration, Embedded C and practical automation.
         </p>
+        <a href="#" class="button">View Demo</a>
     </div>
 
     <div class="project">

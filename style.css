@@ -1,0 +1,382 @@
+/* ===== General ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #fffaf5;
+    line-height: 1.6;
+}
+
+
+/* ===== Navigation ===== */
+
+header {
+    background: #3b1f14;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f4c27a;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4c27a;
+}
+
+
+/* ===== Hero ===== */
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(rgba(40, 18, 10, 0.68), rgba(40, 18, 10, 0.68)),
+        linear-gradient(135deg, #8b4513, #d2691e, #5c2c18);
+}
+
+.hero-content {
+    max-width: 750px;
+    color: white;
+}
+
+.hero-content > p:first-child {
+    color: #f4c27a;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero h2 {
+    font-size: 27px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #f4a641;
+    color: #3b1f14;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffd08a;
+    transform: translateY(-2px);
+}
+
+
+/* ===== Common Sections ===== */
+
+section {
+    padding: 80px 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    color: #3b1f14;
+    margin-bottom: 45px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #e49a3a;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+
+/* ===== About ===== */
+
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(80, 40, 10, 0.08);
+}
+
+.about-text h3 {
+    color: #8b4513;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+/* ===== Menu ===== */
+
+.menu-section {
+    background: #fff3e5;
+}
+
+.menu-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-card {
+    background: white;
+    padding: 28px 22px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 7px 20px rgba(80, 40, 10, 0.08);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(80, 40, 10, 0.15);
+}
+
+.food-image {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.menu-card h3 {
+    color: #3b1f14;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    color: #777;
+    font-size: 14px;
+    min-height: 65px;
+    margin-bottom: 15px;
+}
+
+.menu-card span {
+    display: inline-block;
+    color: #a65318;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ===== Gallery ===== */
+
+.gallery-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    background: linear-gradient(135deg, #f5d3a5, #e9a65b);
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+
+/* ===== Contact ===== */
+
+.contact-section {
+    background: #fff3e5;
+    text-align: center;
+}
+
+.contact-section > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    margin-bottom: 35px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    color: #555;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #d88932;
+}
+
+#contactForm button {
+    border: none;
+    background: #3b1f14;
+    color: white;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contactForm button:hover {
+    background: #8b4513;
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+    background: #3b1f14;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    color: #f4c27a;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #ddd;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+/* ===== Mobile ===== */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .menu-container,
+    .gallery-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .about-container {
+        padding: 30px 22px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+}
